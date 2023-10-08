@@ -9,6 +9,10 @@ export const StyledMainContainer = styled.div`
 
   flex: 1;
 
+  .title {
+    width: 15ch;
+  }
+
   p {
     max-width: 51ch;
     font-size: 1.125em;

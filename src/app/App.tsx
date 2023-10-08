@@ -1,5 +1,8 @@
-import { HomeSection } from "./shared/components";
-import { AboutSection } from "./shared/components/AboutSection";
+import {
+  HomeSection,
+  AboutSection,
+  InscriptionSection,
+} from "./shared/components";
 import { Configs } from "./shared/configs";
 import { GlobalStyle } from "./shared/global/styles";
 
@@ -11,6 +14,8 @@ export function App() {
         <HomeSection />
 
         <AboutSection id={Configs.Navigation.About} />
+
+        <InscriptionSection id={Configs.Navigation.Inscription} />
       </main>
     </>
   );

@@ -6,5 +6,9 @@ interface ITitleProps {
 }
 
 export function Title({ content, color = "black" }: ITitleProps) {
-  return <StyledContainer color={color}>{content}</StyledContainer>;
+  return (
+    <StyledContainer className="title" color={color}>
+      {content}
+    </StyledContainer>
+  );
 }

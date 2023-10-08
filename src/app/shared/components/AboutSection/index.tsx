@@ -1,5 +1,4 @@
-import { Title } from "..";
-import { AboutCard } from "../AboutCard";
+import { Title, AboutCard } from "..";
 import CalendarImage from "../../assets/calendar.png";
 import MoneyImage from "../../assets/money.png";
 import CertificateImage from "../../assets/certificate.png";

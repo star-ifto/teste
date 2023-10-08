@@ -8,13 +8,13 @@ export function Header() {
       <img src={GETECLogoImage} alt="GETEC" />
 
       <nav>
-        <a href={Configs.Navigation.About}>Sobre</a>
+        <a href={`#${Configs.Navigation.About}`}>Sobre</a>
 
-        <a href={Configs.Navigation.Inscription}>Inscrição</a>
+        <a href={`#${Configs.Navigation.Inscription}`}>Inscrição</a>
 
-        <a href={Configs.Navigation.Timeline}>Cronograma</a>
+        <a href={`#${Configs.Navigation.Timeline}`}>Cronograma</a>
 
-        <a href={Configs.Navigation.Sponsors}>Patrocinadores</a>
+        <a href={`#${Configs.Navigation.Sponsors}`}>Patrocinadores</a>
       </nav>
     </StyledContainer>
   );

@@ -23,7 +23,7 @@ export function HomeSection() {
             nulla etiam turpis quam diam et. Arcu nisi, sed aenean sit nisl.
           </p>
 
-          <a href={Configs.Navigation.Inscription}>Inscrição</a>
+          <a href={`#${Configs.Navigation.Inscription}`}>Inscrição</a>
         </div>
 
         <img src={PeoplesGroupImage} alt="Grupo de Pessoas" />

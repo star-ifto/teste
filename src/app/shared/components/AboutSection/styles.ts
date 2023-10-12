@@ -12,13 +12,6 @@ export const StyledContainer = styled(ContentContainer)`
     text-align: center;
     width: 100%;
   }
-
-  p {
-    line-height: 150%;
-    text-align: center;
-    font-size: 1.5625em;
-    font-family: "Montserrat", sans-serif;
-  }
 `;
 
 export const StyledCardsContainer = styled.div`

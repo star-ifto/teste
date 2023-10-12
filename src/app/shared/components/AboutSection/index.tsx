@@ -1,4 +1,4 @@
-import { Title, AboutCard } from "..";
+import { Title, AboutCard, GiantParagraph } from "..";
 import CalendarImage from "../../assets/calendar.png";
 import MoneyImage from "../../assets/money.png";
 import CertificateImage from "../../assets/certificate.png";
@@ -15,7 +15,7 @@ export function AboutSection({ ...rest }: IAboutSectionProps) {
     <StyledContainer type="secondary" {...rest}>
       <Title content="Sobre o Evento" />
 
-      <p>
+      <GiantParagraph>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and
@@ -25,7 +25,7 @@ export function AboutSection({ ...rest }: IAboutSectionProps) {
         of Letraset sheets containing Lorem Ipsum passages, and more recently
         with desktop publishing software like Aldus PageMaker including versions
         of Lorem Ipsum.
-      </p>
+      </GiantParagraph>
 
       <StyledCardsContainer>
         <AboutCard

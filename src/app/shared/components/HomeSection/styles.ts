@@ -44,6 +44,49 @@ export const StyledMainContainer = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 1560px) {
+    .title {
+      width: 39vw;
+    }
+
+    img {
+      width: 39vw;
+    }
+  }
+
+  @media screen and (max-width: 1500px) {
+    padding: 6%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    text-align: center;
+
+    .title {
+      width: auto;
+    }
+
+    p {
+      max-width: none;
+      text-align: center;
+      font-size: 1.5em;
+    }
+
+    img {
+      display: none;
+    }
+
+    div {
+      align-items: center;
+      gap: 12vh;
+    }
+  }
+
+  @media screen and (max-width: 605px) {
+    .title {
+      font-size: 2.5em;
+    }
+  }
 `;
 
 export const StyledRectangleGroup = styled.img`
@@ -51,4 +94,8 @@ export const StyledRectangleGroup = styled.img`
   top: 0;
   right: 0;
   z-index: 0;
+
+  @media screen and (max-width: 1560px) {
+    display: none;
+  }
 `;

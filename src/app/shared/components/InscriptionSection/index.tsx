@@ -1,8 +1,7 @@
 import QRCode from "react-qr-code";
 import { GiantParagraph, Title } from "..";
 import { StyledContainer, StyledQrCodeContainer } from "./styles";
-import { Copy, Check } from "phosphor-react";
-import { useCallback, useState } from "react";
+import { ArrowSquareOut } from "phosphor-react";
 
 interface IInscriptionSectionProps
   extends React.DetailedHTMLProps<
@@ -13,25 +12,9 @@ interface IInscriptionSectionProps
 const INSCRIPTION_LINK = "http://192.168.7.5:5173/";
 
 export function InscriptionSection({ ...rest }: IInscriptionSectionProps) {
-  const [isQrCodeLinkCopied, setIsQrCodeLinkCopied] = useState(false);
-
-  // This is the function we wrote earlier
-  async function copyQrCodeLinkToClipboard() {
-    if ("clipboard" in navigator)
-      return await navigator.clipboard.writeText(INSCRIPTION_LINK);
-
-    return document.execCommand("copy", true, INSCRIPTION_LINK);
+  function handleAccessLink() {
+    window.open(INSCRIPTION_LINK, "_blank");
   }
-
-  const handleCopyQrCodeLink = useCallback(async () => {
-    try {
-      await copyQrCodeLinkToClipboard();
-
-      setIsQrCodeLinkCopied(true);
-
-      window.setTimeout(() => setIsQrCodeLinkCopied(false), 1500);
-    } catch {}
-  }, []);
 
   return (
     <StyledContainer type="tertiary" {...rest}>
@@ -61,16 +44,8 @@ export function InscriptionSection({ ...rest }: IInscriptionSectionProps) {
           />
         </div>
 
-        <button onClick={handleCopyQrCodeLink}>
-          {isQrCodeLinkCopied ? (
-            <>
-              COPIADO! <Check size={22} weight="bold" />
-            </>
-          ) : (
-            <>
-              COPIAR LINK <Copy size={22} weight="bold" />
-            </>
-          )}
+        <button onClick={handleAccessLink}>
+          ACESSAR LINK <ArrowSquareOut size={22} weight="bold" />
         </button>
       </StyledQrCodeContainer>
     </StyledContainer>

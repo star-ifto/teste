@@ -5,6 +5,7 @@ export const StyledContainer = styled(ContentContainer)`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 2em;
   padding: 6%;
   width: 100%;
@@ -20,5 +21,10 @@ export const StyledSponsorsContainer = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-  gap: 8em;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 1700px) {
+    gap: 2em;
+  }
 `;

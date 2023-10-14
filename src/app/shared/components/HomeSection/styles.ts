@@ -78,7 +78,7 @@ export const StyledMainContainer = styled.div`
 
     div {
       align-items: center;
-      gap: 12vh;
+      /* gap: 12vh; */
     }
   }
 

@@ -28,6 +28,10 @@ export const StyledContainer = styled.section<IStyledContainerProps>`
           color: #000000;
         `}
 
+  &.home {
+    padding: 0 !important;
+  }
+
   @media screen and (max-width: 1210px) {
     padding: 4% 6%;
     justify-content: space-around;

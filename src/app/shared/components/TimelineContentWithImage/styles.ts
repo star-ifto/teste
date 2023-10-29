@@ -60,6 +60,7 @@ export const StyledSpeakerInfo = styled.div<IStyledSpeakerInfoProps>`
     height: 100%;
     background-color: white;
     font-size: 1.1em;
+    flex: 1;
   }
 
   @media screen and (max-width: 1205px) {

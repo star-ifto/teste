@@ -1,9 +1,12 @@
+import { useMemo, useState } from "react";
 import {
   StyledContainer,
   StyledContentContainer,
   StyledImageContainer,
   StyledSpeakerInfo,
 } from "./styles";
+import DefaultMaleAvatar from "../../assets/default-male-avatar.gif";
+import DefaultFemaleAvatar from "../../assets/default-female-avatar.gif";
 
 interface ITimelineContentWithImageProps {
   title: string;
@@ -11,6 +14,7 @@ interface ITimelineContentWithImageProps {
   name: string;
   description: string;
   right?: boolean;
+  womanSpeaker?: boolean;
 }
 
 export function TimelineContentWithImage({
@@ -19,7 +23,15 @@ export function TimelineContentWithImage({
   name,
   description,
   right = false,
+  womanSpeaker = false,
 }: ITimelineContentWithImageProps) {
+  const [imageError, setImageError] = useState(false);
+
+  const defaultAvatarImage = useMemo(
+    () => (womanSpeaker ? DefaultFemaleAvatar : DefaultMaleAvatar),
+    [womanSpeaker]
+  );
+
   return (
     <StyledContainer>
       <h1>Palestra</h1>
@@ -27,7 +39,11 @@ export function TimelineContentWithImage({
       <StyledContentContainer right={right}>
         <StyledSpeakerInfo right={right}>
           <StyledImageContainer>
-            <img src={image} alt={name} />
+            <img
+              src={imageError ? defaultAvatarImage : image}
+              alt={name}
+              onError={() => setImageError(true)}
+            />
           </StyledImageContainer>
 
           <strong>{name}</strong>

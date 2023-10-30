@@ -95,7 +95,7 @@ export const StyledRectangleGroup = styled.img`
   right: 0;
   z-index: 0;
 
-  @media screen and (max-width: 1560px) {
+  @media screen and (max-width: 1700px) {
     display: none;
   }
 `;

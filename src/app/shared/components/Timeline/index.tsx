@@ -3,8 +3,10 @@ import { TimelineContentWithImage } from "../TimelineContentWithImage";
 import { StyledTimeline } from "./styles";
 import { Fragment } from "react";
 
+import AndersonSRicardoImage from "../../assets/speakers/anderson-s-ricardo.jpg";
 import IzabelaMarianaImage from "../../assets/speakers/izabela-mariana.jpg";
 import GeanSharlyImage from "../../assets/speakers/gean-sharly.jpg";
+import PedroHenriqueAlcantaraImage from "../../assets/speakers/pedro-henrique.jpg";
 
 export function Timeline() {
   return (
@@ -30,9 +32,9 @@ export function Timeline() {
         <TimelineContainer hour="19:30">
           <TimelineContentWithImage
             title="Empreendedorismo e Resiliência: Lições de um Empreendedor de sucesso"
-            image=""
-            name="Renato Borghetti"
-            description="Formado em Engenharia Agronômica pela Universidade Estadual de Montes Claros, um mestrado em Solos e Nutrição de Plantas pela Universidade Federal de Viçosa e um Executive MBA em Administração e Negócios pela FIA Business School. Sócio proprietário da AgroMinas Produtos Agropecuários em Araguaína - TO, onde atua desde junho de 2013."
+            image={AndersonSRicardoImage}
+            name="Anderson S. Ricardo"
+            description="Profissional com formação em Engenharia Agronômica pela UNESP e um mestrado em Ciência Animal Tropical com foco em Integração Lavoura-Pecuária pela Universidade Federal do Tocantins. Atualmente, ele ocupa o cargo de Gerente Técnico Comercial na AgroMinas Produtos Agropecuários em Araguaína - TO, onde trabalha desde abril de 2018, inicialmente como Representante Técnico de Vendas."
           />
         </TimelineContainer>
 
@@ -139,9 +141,9 @@ export function Timeline() {
         <TimelineContainer hour="19:00" right>
           <TimelineContentWithImage
             title="?"
-            image=""
-            name="?"
-            description="?"
+            image={PedroHenriqueAlcantaraImage}
+            name="Pedro Henrique Alcântara"
+            description="CEO da empresa Momê Açaiteria, uma franquia em rápido crescimento que abrange cinco estados do Brasil, destacando-se no meio-norte do país. A marca se destaca por oferecer produtos altamente personalizáveis com qualidade e diversas opções de acompanhamentos. Além disso, a franquia é caracterizada por um baixo investimento e um excelente retorno financeiro, tornando-a uma oportunidade de investimento altamente atrativa."
             right
           />
         </TimelineContainer>

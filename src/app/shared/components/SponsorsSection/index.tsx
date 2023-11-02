@@ -28,7 +28,7 @@ interface ISponsorsSectionProps
 
 const SPONSORS: ISponsorProps[] = [
   {
-    title: "TOC MAQ",
+    title: "TOCMAQ",
     image: TOCMAQImage,
     description:
       "Serviços para máquinas pesadas, atendendo às necessidades dos clientes em vários setores. Oferece manutenção, vendas de peças, inspeção e diagnóstico avançado.",

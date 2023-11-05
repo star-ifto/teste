@@ -31,9 +31,9 @@ export function Timeline() {
 
         <TimelineContainer hour="19:30">
           <TimelineContentWithImage
-            title="Empreendedorismo e Resiliência: Lições de um Empreendedor de sucesso"
+            title="Gerindo Negócios: Insights Para a Ascensão Profissional"
             image={AndersonSRicardoImage}
-            name="Anderson S. Ricardo"
+            name="Anderson da Silva Ricardo"
             description="Profissional com formação em Engenharia Agronômica pela UNESP e um mestrado em Ciência Animal Tropical com foco em Integração Lavoura-Pecuária pela Universidade Federal do Tocantins. Atualmente, ele ocupa o cargo de Gerente Técnico Comercial na AgroMinas Produtos Agropecuários em Araguaína - TO, onde trabalha desde abril de 2018, inicialmente como Representante Técnico de Vendas."
           />
         </TimelineContainer>
@@ -48,7 +48,7 @@ export function Timeline() {
         <TimelineContainer hour="21:00">
           <TimelineSimpleContent
             title="Mesa Redonda"
-            content={`Junte-se a Paulo André, Analista de RH, e Marina Teixeira, Advogada, para uma discussão profunda sobre "Desenvolvimento de Talentos: como identificar, desenvolver e reter talentos dentro da organização".`}
+            content={`Junte-se a Paulo André, Analista de RH, e Marina Teixeira, Advogada Trabalhista, para uma discussão profunda sobre "Desenvolvimento de Talentos: como identificar, desenvolver e reter talentos dentro da organização".`}
           />
         </TimelineContainer>
 
@@ -114,7 +114,7 @@ export function Timeline() {
 
         <TimelineContainer hour="21:00" color="secondary">
           <TimelineSimpleContent
-            title="Workshop: Técnicas de Oratória"
+            title="Workshop: Inovação Tecnológica: A Arte da Comunicação Eficaz"
             content="Aprimore suas habilidades de comunicação! Este workshop irá explorar técnicas essenciais de oratória para ajudá-lo a se expressar com confiança e impacto. Este é o momento de aprimorar suas habilidades de fala."
           />
         </TimelineContainer>
@@ -140,7 +140,7 @@ export function Timeline() {
 
         <TimelineContainer hour="19:00" right>
           <TimelineContentWithImage
-            title="?"
+            title="Os Desafios de Empreender"
             image={PedroHenriqueAlcantaraImage}
             name="Pedro Henrique Alcântara"
             description="CEO da empresa Momê Açaiteria, uma franquia em rápido crescimento que abrange cinco estados do Brasil, destacando-se no meio-norte do país. A marca se destaca por oferecer produtos altamente personalizáveis com qualidade e diversas opções de acompanhamentos. Além disso, a franquia é caracterizada por um baixo investimento e um excelente retorno financeiro, tornando-a uma oportunidade de investimento altamente atrativa."

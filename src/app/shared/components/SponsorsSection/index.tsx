@@ -12,6 +12,10 @@ import DoutorHerniaImage from "../../assets/sponsors/doutor-hernia.png";
 import OticaSOSImage from "../../assets/sponsors/otica-sos.png";
 import CasaDeRacoesAgronorteImage from "../../assets/sponsors/casa-de-racoes-agronorte.png";
 import SousaRefrigeracaoImage from "../../assets/sponsors/sousa-refrigeracao.png";
+import IfmakerImage from "../../assets/sponsors/ifmaker.jpg";
+import EspacoCNMarileneRibeiroImage from "../../assets/sponsors/espaco-cn-marilene-ribeiro.jpg";
+import SupermercadoLimaImage from "../../assets/sponsors/supermercado-lima.jpg";
+import FarmaciaBrasilImage from "../../assets/sponsors/farmacia-brasil.jpg";
 
 interface ISponsorProps {
   image: string;
@@ -95,6 +99,34 @@ const SPONSORS: ISponsorProps[] = [
     description:
       "Desenvolve seu trabalho no segmento de manutenção e reparação em aparelhos de refrigeração e ventilação para uso industrial, comercial e residencial.",
     instagram: "sousa_refrigeracao_e_eletrica",
+  },
+  {
+    title: "IFMAKER",
+    image: IfmakerImage,
+    description:
+      "Consiste em um espaço compartilhado, no qual os estudantes podem colocar em prática ideias e criações inovadoras. Dispõe de equipamentos como impressora 3D, computadores, kits de robótica, ferramentas para usinagem, e outros.",
+    instagram: "ifmaker.araguaina",
+  },
+  {
+    title: "ESPAÇO CN MARILENE RIBEIRO",
+    image: EspacoCNMarileneRibeiroImage,
+    description:
+      "Atua na comercialização de produtos cosméticos garantindo a satisfação do cliente e proporcionando os melhores produtos.",
+    instagram: "espacocnmarileneribeiro",
+  },
+  {
+    title: "SUPERMERCADO LIMA",
+    image: SupermercadoLimaImage,
+    description:
+      "Tem a missão de atender desejos, anseios e necessidades dos consumidores, gerar empregos, trabalhar dentro da realidade com honestidade, justiça e qualidade em nossos produtos, com Deus no coração.",
+    instagram: "supermercadolima23",
+  },
+  {
+    title: "FARMÁCIA BRASIL",
+    image: FarmaciaBrasilImage,
+    description:
+      "Preza pelo alto padrão de qualidade e comprometimento com a saúde. Nasceu com o intuito de oferecer medicamentos Éticos e Genéricos de marcas conceituadas com preços acessíveis.",
+    instagram: "farmabrasil03",
   },
 ];
 

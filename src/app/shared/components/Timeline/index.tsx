@@ -3,6 +3,7 @@ import { TimelineContentWithImage } from "../TimelineContentWithImage";
 import { StyledTimeline } from "./styles";
 import { Fragment } from "react";
 // import GeanSharly from "../../assets/speakers/gean-sharly.jpg";
+import IuryGomes from "../../assets/speakers/prof-iury.png";
 import CharlesJefferson from "../../assets/speakers/professor-charles.jpeg";
 
 export function Timeline() {
@@ -41,6 +42,18 @@ export function Timeline() {
         </TimelineContainer>
 
         <TimelineContainer hour="20:40 - 21:20" right>
+          <TimelineContentWithImage
+            title="💻 Inovação no IFTO Campus Araguaína: Como a Metodologia do LabSIS Impulsionou a Premiação dos Projetos UpGrade e LembreMED"
+            image={IuryGomes}
+            name="Iury Gomes de Oliveira"
+            about_name="Mestre em Ciência da Computação, Programador e Professor do IFTO Campus Araguaína"
+            description="Resumo: Nesta palestra, exploraremos como a metodologia inovadora do Laboratório de Sistemas de Informação e Software (LabSIS) do IFTO Campus Araguaína."
+            address="Área de Convivência (Bloco 2)"
+          />
+        </TimelineContainer>
+
+
+         <TimelineContainer hour="21:20 - 21:50" right>
           <TimelineContentWithImage
             title="💻 Palestra: Saúde 4.0: Indicadores em Tempo Real com Blockchain"
             image={CharlesJefferson}

@@ -1,8 +1,8 @@
 import QRCode from "react-qr-code";
 import { GiantParagraph, Title } from "..";
 import { StyledContainer, StyledQrCodeContainer } from "./styles";
-// import { ArrowSquareOut } from "phosphor-react";
-// import { WhatsappLogo } from "../../assets/whatsapp-logo.png";
+import { ArrowSquareOut } from "phosphor-react";
+import { WhatsappLogo } from "phosphor-react";
 
 interface IInscriptionSectionProps
   extends React.DetailedHTMLProps<
@@ -13,6 +13,9 @@ interface IInscriptionSectionProps
 const INSCRIPTION_LINK = "https://suap.ifto.edu.br/eventos/inscricao/1/1335/";
 
 export function InscriptionSection({ ...rest }: IInscriptionSectionProps) {
+   function handleAccessLink() {
+    window.open(INSCRIPTION_LINK, "_blank");
+}
 
   return (
     <StyledContainer type="tertiary" {...rest}>
@@ -38,11 +41,11 @@ export function InscriptionSection({ ...rest }: IInscriptionSectionProps) {
           />
         </div>
 
-        {/* <button onClick={handleAccessLink}>
+        <button onClick={handleAccessLink}>
           ACESSAR LINK <ArrowSquareOut size={22} weight="bold" />
-          ENTRAR NO GRUPO{" "}
-          <WhatsappLogo size={22} weight="duotone" color="#4BCA59" />
-        </button> */}
+          {/* ENTRAR NO GRUPO{" "}
+          <WhatsappLogo size={22} weight="duotone" color="#4BCA59" /> */}
+        </button>
 
 
       </StyledQrCodeContainer>

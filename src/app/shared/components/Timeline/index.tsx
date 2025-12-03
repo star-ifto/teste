@@ -115,7 +115,7 @@ export function Timeline() {
             inteligência artificial e api do Discord,desde a configuração inicial até a implementação de comandos personalizados.
              Descubra como interagir com a API do Discord e adicionar funcionalidades divertidas e úteis ao seu servidor."
             vacancy="Vagas disponíveis: 25"
-            address="Laboratório 1"
+            address="Laboratório 2"
             womanSpeaker={false}
             twoSpeakers={true}
           />
@@ -134,7 +134,7 @@ export function Timeline() {
             name="Aghata Magno"
             about_name="Dev Front-End e Formanda em ADS - IFTO Araguaína"
             description="Mergulhe no mundo da Experiência do Usuário (UX)! Neste minicurso, você aprenderá os princípios fundamentais de design centrado no usuário, incluindo pesquisa, prototipagem e testes de usabilidade. Prepare-se para criar experiências digitais que realmente atendam às necessidades dos usuários."
-            address="Laboratório 2"
+            address="Laboratório 1"
             vacancy="Vagas disponíveis: 20"
             womanSpeaker
             twoSpeakers={false}
@@ -200,7 +200,7 @@ export function Timeline() {
             inteligência artificial e api do Discord,desde a configuração inicial até a implementação de comandos personalizados.
              Descubra como interagir com a API do Discord e adicionar funcionalidades divertidas e úteis ao seu servidor."
             vacancy="Vagas disponíveis: 25"
-            address="Laboratório 1"
+            address="Laboratório 2"
             womanSpeaker={false}
             twoSpeakers={true}
           />
@@ -219,7 +219,7 @@ export function Timeline() {
             name="Aghata Magno"
             about_name="Dev Front-End e Formanda em ADS - IFTO Araguaína"
             description="Mergulhe no mundo da Experiência do Usuário (UX)! Neste minicurso, você aprenderá os princípios fundamentais de design centrado no usuário, incluindo pesquisa, prototipagem e testes de usabilidade. Prepare-se para criar experiências digitais que realmente atendam às necessidades dos usuários."
-            address="Laboratório 2"
+            address="Laboratório 1"
             vacancy="Vagas disponíveis: 20"
             womanSpeaker
             twoSpeakers={false}
